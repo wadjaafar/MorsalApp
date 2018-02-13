@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.afromoney_ltd.morsal.Voucher">
+
+    <Button
+        android:id="@+id/generate_voucher"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/cashout_voucher"
+        android:layout_alignEnd="@+id/cashout_voucher"
+        android:layout_alignRight="@+id/cashout_voucher"
+        android:layout_marginBottom="110dp"
+        android:onClick="voucher"
+        android:text="Generate Voucher"
+        tools:layout_editor_absoluteX="111dp"
+        tools:layout_editor_absoluteY="121dp" />
+
+    <Button
+        android:id="@+id/cashout_voucher"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="165dp"
+        android:onClick="voucher"
+        android:text="Cash Out Voucher "
+        tools:layout_editor_absoluteX="111dp"
+        tools:layout_editor_absoluteY="260dp" />
+</RelativeLayout>

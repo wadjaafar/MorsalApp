@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.afromoney_ltd.morsal.CashoutVoucher">
+
+    <Button
+        android:id="@+id/cashout_voucher_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="161dp"
+        android:text="Cash Out Voucher"
+        android:onClick="cashoutVoucher"/>
+
+    <EditText
+        android:id="@+id/amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/voucher_number"
+        android:layout_alignLeft="@+id/voucher_number"
+        android:layout_alignStart="@+id/voucher_number"
+        android:layout_marginBottom="26dp"
+        android:ems="10"
+        android:hint="Amount"
+        android:inputType="numberDecimal" />
+
+    <EditText
+        android:id="@+id/voucher_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:ems="10"
+        android:hint="Voucher number"
+        android:inputType="number" />
+
+</RelativeLayout>

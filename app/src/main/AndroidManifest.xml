@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.afromoney_ltd.morsal">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".BillPayment"
+            android:label="Bill Payment" />
+        <activity
+            android:name=".Purchase"
+            android:label="Purchase" />
+        <activity
+            android:name=".Voucher"
+            android:label="Voucher" />
+        <activity
+            android:name=".Inquiry"
+            android:label="Inquiry" />
+        <activity
+            android:name=".Transaction"
+            android:label="Transaction" />
+        <activity
+            android:name=".PurchaseOperation"
+            android:label="Purchase" />
+        <activity
+            android:name=".PurchaseCashback"
+            android:label="Purchase Cashback" />
+        <activity
+            android:name=".PurchaseReversal"
+            android:label="Purchase Reversal" />
+        <activity
+            android:name=".GenerateVoucher"
+            android:label="Generate Voucher" />
+        <activity
+            android:name=".CashoutVoucher"
+            android:label="Cashout Voucher" />
+        <activity android:name=".BillInquiry"
+            android:label="Bill Inquiry"/>
+        <activity android:name=".BalanceInquiry"
+            android:label="Balance Inquiry"/>
+        <activity android:name=".MiniStatement"
+            android:label="Mini Statement"/>
+    </application>
+
+</manifest>

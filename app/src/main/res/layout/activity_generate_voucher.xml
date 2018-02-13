@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.afromoney_ltd.morsal.GenerateVoucher">
+
+    <Button
+        android:id="@+id/generate_voucher_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="161dp"
+        android:text="Generate"
+        android:onClick="generateVoucher"/>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/amount"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="38dp"
+        android:text="Please swipe your card ..." />
+
+    <EditText
+        android:id="@+id/amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/phone_number"
+        android:layout_alignLeft="@+id/phone_number"
+        android:layout_alignStart="@+id/phone_number"
+        android:layout_marginBottom="13dp"
+        android:ems="10"
+        android:hint="Amount"
+        android:inputType="numberDecimal" />
+
+    <EditText
+        android:id="@+id/phone_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:ems="10"
+        android:hint="Phone number"
+        android:inputType="number" />
+
+</RelativeLayout>

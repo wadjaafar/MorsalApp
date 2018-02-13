@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.afromoney_ltd.morsal.Inquiry">
+
+    <Button
+        android:id="@+id/bill_inquiry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/balance_inquiry"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="95dp"
+        android:text="Bill Inquiry"
+        android:onClick="inquiryButton"/>
+
+    <Button
+        android:id="@+id/balance_inquiry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/mini_statement"
+        android:layout_alignRight="@+id/mini_statement"
+        android:layout_centerVertical="true"
+        android:text="Balance Inquiry"
+        android:onClick="inquiryButton"/>
+
+    <Button
+        android:id="@+id/mini_statement"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="138dp"
+        android:text="Mini Statement"
+        android:onClick="inquiryButton"/>
+</RelativeLayout>
